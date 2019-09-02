@@ -5,8 +5,8 @@ POST  {{base_url}}/auth/local
 Content-Type: application/json
 
 {
-  "identifier": "anwar@codecoffeecreative.com",
-  "password": "root007"
+  "identifier": "root",
+  "password": "jamsembilan50"
 }
 
 ### Register
@@ -42,7 +42,7 @@ Content-Type: application/json
 ### Me
 GET  {{base_url}}/users/me
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDViZjhmY2VmZmZjZTllMGU4OGIyZTAiLCJpZCI6IjVkNWJmOGZjZWZmZmNlOWUwZTg4YjJlMCIsImlhdCI6MTU2NjMxMDAwOCwiZXhwIjoxNTY4OTAyMDA4fQ.o1Omb6hKw_vAyTWFTwEBGcq93CuIIYBHJW2QOqqs6_E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZDZjYWFlYjc0M2UyZjBkNGVjODMwYWYiLCJpZCI6IjVkNmNhYWViNzQzZTJmMGQ0ZWM4MzBhZiIsImlhdCI6MTU2NzQwMjgxMiwiZXhwIjoxNTY5OTk0ODEyfQ._YfAgHECISVGC8DgSVou0bl1LSpSlGYipI0AraP88Do
 
 ### Add School
 POST  {{base_url}}/schools
