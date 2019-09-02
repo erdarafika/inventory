@@ -1,0 +1,89 @@
+{
+  "connection": "default",
+  "collectionName": "inventory",
+  "info": {
+    "name": "inventory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "received_date": {
+      "type": "date"
+    },
+    "employees": {
+      "collection": "employee",
+      "via": "inventories",
+      "dominant": true
+    },
+    "supplier": {
+      "model": "supplier",
+      "via": "inventories"
+    },
+    "name": {
+      "maxLength": 20,
+      "minLength": 2,
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "qty": {
+      "type": "integer",
+      "min": 1,
+      "default": "1"
+    },
+    "bought_date": {
+      "type": "date"
+    },
+    "condition": {
+      "required": true,
+      "enum": [
+        "good",
+        "bad"
+      ],
+      "default": "good",
+      "type": "enumeration"
+    },
+    "status": {
+      "enum": [
+        "buy",
+        "grant"
+      ],
+      "type": "enumeration",
+      "default": "buy"
+    },
+    "serial_number": {
+      "maxLength": 32,
+      "type": "string"
+    },
+    "inventorygroup": {
+      "model": "inventorygroup",
+      "via": "inventories"
+    },
+    "division": {
+      "model": "division",
+      "via": "inventories"
+    },
+    "location": {
+      "model": "location",
+      "via": "inventories"
+    },
+    "branch": {
+      "model": "branch",
+      "via": "inventories"
+    },
+    "brand": {
+      "model": "brand",
+      "via": "inventories"
+    },
+    "inventory_number": {
+      "maxLength": 32,
+      "type": "string"
+    }
+  }
+}

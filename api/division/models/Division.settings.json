@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "division",
+  "info": {
+    "name": "division",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 30,
+      "default": "",
+      "required": true,
+      "unique": true,
+      "minLength": 2,
+      "type": "string"
+    },
+    "is_active": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "division"
+    }
+  }
+}

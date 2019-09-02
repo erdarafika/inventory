@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "headless",
+        "uri": "mongodb://superme:jamsembilan50@52.221.198.120:28018/headless",
+        "host": "52.221.198.120",
+        "srv": false,
+        "port": "28018",
+        "username": "superme",
+        "password": "jamsembilan50"
+      },
+      "options": {
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "employee",
+  "info": {
+    "name": "employee",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 30,
+      "required": true,
+      "minLength": 3,
+      "type": "string"
+    },
+    "is_active": {
+      "default": true,
+      "type": "boolean"
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "employees"
+    }
+  }
+}

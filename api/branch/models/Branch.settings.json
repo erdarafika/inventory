@@ -1,0 +1,47 @@
+{
+  "connection": "default",
+  "collectionName": "branch",
+  "info": {
+    "name": "branch",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 20,
+      "required": true,
+      "unique": true,
+      "minLength": 2,
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "address": {
+      "maxLength": 70,
+      "minLength": 7,
+      "type": "string"
+    },
+    "phone": {
+      "maxLength": 14,
+      "minLength": 6,
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "code": {
+      "type": "string",
+      "maxLength": 7
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "branch"
+    }
+  }
+}

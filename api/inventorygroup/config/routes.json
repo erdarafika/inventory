@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inventorygroups",
+      "handler": "Inventorygroup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inventorygroups/count",
+      "handler": "Inventorygroup.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inventorygroups/:_id",
+      "handler": "Inventorygroup.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inventorygroups",
+      "handler": "Inventorygroup.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inventorygroups/:_id",
+      "handler": "Inventorygroup.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inventorygroups/:_id",
+      "handler": "Inventorygroup.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

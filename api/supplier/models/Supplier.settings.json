@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "supplier",
+  "info": {
+    "name": "supplier",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    },
+    "is_active": {
+      "default": true,
+      "type": "boolean"
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "supplier"
+    }
+  }
+}

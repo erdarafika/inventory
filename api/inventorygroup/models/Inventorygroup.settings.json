@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "inventory_group",
+  "info": {
+    "name": "inventorygroup",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "code": {
+      "maxLength": 70,
+      "type": "string"
+    },
+    "name": {
+      "maxLength": 70,
+      "type": "string"
+    },
+    "nomor": {
+      "maxLength": 70,
+      "type": "string"
+    },
+    "category": {
+      "model": "category",
+      "via": "inventorygroups"
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "inventorygroup"
+    }
+  }
+}

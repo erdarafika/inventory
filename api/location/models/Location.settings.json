@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "location",
+  "info": {
+    "name": "location",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 30,
+      "required": true,
+      "unique": true,
+      "minLength": 2,
+      "type": "string"
+    },
+    "is_active": {
+      "required": true,
+      "default": true,
+      "type": "boolean"
+    },
+    "inventories": {
+      "collection": "inventory",
+      "via": "location"
+    }
+  }
+}

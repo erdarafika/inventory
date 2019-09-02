@@ -1,0 +1,11 @@
+{
+  "views": {
+    "enabled": true,
+    "map": {
+      "ejs": "ejs"
+    },
+    "viewExt": "ejs",
+    "debug": true,
+    "cache": true
+  }
+}
